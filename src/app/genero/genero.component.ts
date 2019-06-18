@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GenerosService } from '../generos.service';
 import { map, mergeAll } from 'rxjs/operators';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-genero',
   templateUrl: './genero.component.html',
@@ -24,5 +24,9 @@ export class GeneroComponent implements OnInit {
     );
 
   }
+
+  
+
+  
 
 }

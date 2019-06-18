@@ -9,6 +9,11 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { CadastrarArtistaComponent } from './cadastrar-artista/cadastrar-artista.component';
 import { ArtistaListaComponent } from './artista-lista/artista-lista.component';
 import { EditarArtistaComponent } from './editar-artista/editar-artista.component';
+import { GeneroListaComponent } from './genero-lista/genero-lista.component';
+import { GeneroCadastrarComponent } from './cadastrar-genero/cadastrar-generos.component';
+import { GeneroAtualizarComponent } from './genero-atualizar/genero-atualizar.component';
+import { GeneroExcluirComponent } from './genero-excluir/genero-excluir.component';
+import { GeneroConsultarComponent } from './genero-consultar/genero-consultar.component';
 
 const routes: Routes = [
   { path: 'artistas/cadastrar', component: CadastrarArtistaComponent },
@@ -17,8 +22,13 @@ const routes: Routes = [
   { path: 'artistas/:id', component: ArtistaComponent },
   { path: 'musicas', component: MusicasComponent },
   { path: 'musicas/:id', component: MusicaComponent },
-  { path: 'generos/:id', component: GeneroComponent },
   { path: 'pesquisa', component: PesquisaComponent },
+  { path: 'genero/listar', component: GeneroListaComponent },
+  { path: 'genero/cadastrar', component: GeneroCadastrarComponent },
+  { path: 'genero/atualizar', component: GeneroAtualizarComponent },
+  { path: 'genero/excluir', component: GeneroExcluirComponent },
+  { path: 'genero/consultar', component: GeneroConsultarComponent },
+  { path: 'generos/:id', component: GeneroComponent },
   { path: '', component: HomeComponent }
 ];
 
